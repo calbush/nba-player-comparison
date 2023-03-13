@@ -2,10 +2,10 @@ import PlayerCard from "./PlayerCard"
 
 export default function CardsGrid({cards}){
     return(
-        <div>
+        <ul>
             {cards.map((card) => {
-                return <PlayerCard player={card} />
+                return <PlayerCard key={`${card.first_name} ${card.last_name}`} player={card} />
             })}
-        </div>
+        </ul>
     )
 }

@@ -1,7 +1,9 @@
 export default function PlayerCard({player}){
     return (
-        <div className="player-card">
-            <div>{player.name}</div>
-        </div>
+        <li>
+            <div className="player-card">
+                <div>{player.first_name}</div>
+            </div>
+        </li>
     )
 }
